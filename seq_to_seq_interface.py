@@ -5,6 +5,9 @@ from keras.layers import Input, LSTM, Dense
 import random
 import numpy as np
 
+from lstm_seq2seq import max_encoder_seq_length, num_encoder_tokens, decode_sequence
+from seq_param import input_token_index
+
 
 def encode_word(input_word, seq_length, dict_length):
     encoder_word = np.zeros((1, seq_length, dict_length), dtype='float32')
