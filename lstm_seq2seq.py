@@ -187,3 +187,5 @@ while True:
         break
     test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
     print("\noutput :", decode_sequence(test_np_array))
+
+
