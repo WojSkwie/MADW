@@ -53,19 +53,21 @@ def decode_sequence(input_seq):
 
 
 if __name__ == '__main__':
+
+    filename = 'model19'
     batch_size = 64
     epochs = 50
     latent_dim = 256  # dlugosc sekwencji komorki LSTM
-    num_samples = 10000  # liczba próbek
-    data_path = 'pairs.txt'
+    num_samples = 20000  # liczba próbek
+    data_path = 'best_data_shuffle.txt'
 
     input_texts = []
     target_texts = []
     input_characters = set()
     target_characters = set()
     lines = open(data_path).read().split('\n')
-    # print("Shuffling data.")
-    random.shuffle(lines)
+    #print("Shuffling data.")
+    #random.shuffle(lines)
     for line in lines[: min(num_samples, len(lines) - 1)]:
         input_text, target_text = line.split(' ')
         target_text = '\t' + target_text + '\n'
@@ -142,7 +144,7 @@ if __name__ == '__main__':
               batch_size=batch_size,
               epochs=epochs,
               validation_split=0.2)
-    model.save('s2s.h5')
+    model.save(filename + '_model.h5')
 
     # Next: inference mode (sampling).
     # Here's the drill:
@@ -154,6 +156,7 @@ if __name__ == '__main__':
 
     # Define sampling models
     encoder_model = Model(encoder_inputs, encoder_states)
+    encoder_model.save(filename + '_encoder.h5')
 
     decoder_state_input_h = Input(shape=(latent_dim,))
     decoder_state_input_c = Input(shape=(latent_dim,))
@@ -165,6 +168,7 @@ if __name__ == '__main__':
     decoder_model = Model(
         [decoder_inputs] + decoder_states_inputs,
         [decoder_outputs] + decoder_states)
+    decoder_model.save(filename + '_decoder.h5')
 
 
     # Reverse-lookup token index to decode sequences back to
