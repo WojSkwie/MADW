@@ -7,7 +7,7 @@ import random
 import numpy as np
 
 batch_size = 64
-epochs = 20
+epochs = 2
 latent_dim = 256  # dlugosc sekwencji komorki LSTM
 num_samples = 10000  # liczba próbek
 data_path = 'pairs.txt'
@@ -18,7 +18,7 @@ input_characters = set()
 target_characters = set()
 lines = open(data_path).read().split('\n')
 # print("Shuffling data.")
-# random.shuffle(lines)
+random.shuffle(lines)
 for line in lines[: min(num_samples, len(lines) - 1)]:
     input_text, target_text = line.split(' ')
     target_text = '\t' + target_text + '\n'
@@ -31,12 +31,18 @@ for line in lines[: min(num_samples, len(lines) - 1)]:
         if char not in target_characters:
             target_characters.add(char)
 
-input_characters = sorted(list(input_characters))
-target_characters = sorted(list(target_characters))
-num_encoder_tokens = len(input_characters)  # liczba wszystkich znaków możliwych #we
-num_decoder_tokens = len(target_characters)
-max_encoder_seq_length = max_seq_length  # max([len(txt) for txt in input_texts])
-max_decoder_seq_length = max_seq_length  # max([len(txt) for txt in target_texts])
+
+# input_characters = sorted(list(input_characters))
+# target_characters = sorted(list(target_characters))
+# num_encoder_tokens = len(input_characters)  # liczba wszystkich znaków możliwych #we
+# num_decoder_tokens = len(target_characters)
+# max_encoder_seq_length = max([len(txt) for txt in input_texts])  # max_seq_length  # max([len(txt) for txt in input_texts])
+# max_decoder_seq_length = max([len(txt) for txt in target_texts])  #max_seq_length  # max([len(txt) for txt in target_texts])
+
+num_encoder_tokens = len(input_token_index)
+num_decoder_tokens = len(target_token_index)
+max_encoder_seq_length = max_seq_length
+max_decoder_seq_length = max_seq_length
 
 print('Number of samples:', len(input_texts))
 print('Number of unique input tokens:', num_encoder_tokens)

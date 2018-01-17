@@ -1,74 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3327176-c383-4af7-bc44-873a1b95c387" name="Default" comment="Pawel zaczyna grzebac BIG TIME">
-      <change beforePath="$PROJECT_DIR$/bin/easy_install" afterPath="$PROJECT_DIR$/bin/easy_install" />
-      <change beforePath="$PROJECT_DIR$/bin/easy_install-3.5" afterPath="$PROJECT_DIR$/bin/easy_install-3.5" />
-      <change beforePath="$PROJECT_DIR$/bin/pip" afterPath="$PROJECT_DIR$/bin/pip" />
-      <change beforePath="$PROJECT_DIR$/bin/pip3" afterPath="$PROJECT_DIR$/bin/pip3" />
-      <change beforePath="$PROJECT_DIR$/bin/pip3.5" afterPath="$PROJECT_DIR$/bin/pip3.5" />
-      <change beforePath="$PROJECT_DIR$/bin/python" afterPath="$PROJECT_DIR$/bin/python" />
-      <change beforePath="$PROJECT_DIR$/bin/python-config" afterPath="$PROJECT_DIR$/bin/python-config" />
-      <change beforePath="$PROJECT_DIR$/bin/python3" afterPath="$PROJECT_DIR$/bin/python3" />
-      <change beforePath="$PROJECT_DIR$/bin/python3.5" afterPath="$PROJECT_DIR$/bin/python3.5" />
-      <change beforePath="$PROJECT_DIR$/bin/wheel" afterPath="$PROJECT_DIR$/bin/wheel" />
-      <change beforePath="$PROJECT_DIR$/include/python3.5m" afterPath="$PROJECT_DIR$/include/python3.5m" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/__future__.py" afterPath="$PROJECT_DIR$/lib/python3.5/__future__.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/_bootlocale.py" afterPath="$PROJECT_DIR$/lib/python3.5/_bootlocale.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/_collections_abc.py" afterPath="$PROJECT_DIR$/lib/python3.5/_collections_abc.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/_dummy_thread.py" afterPath="$PROJECT_DIR$/lib/python3.5/_dummy_thread.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/_weakrefset.py" afterPath="$PROJECT_DIR$/lib/python3.5/_weakrefset.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/abc.py" afterPath="$PROJECT_DIR$/lib/python3.5/abc.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/base64.py" afterPath="$PROJECT_DIR$/lib/python3.5/base64.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/bisect.py" afterPath="$PROJECT_DIR$/lib/python3.5/bisect.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/codecs.py" afterPath="$PROJECT_DIR$/lib/python3.5/codecs.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/collections" afterPath="$PROJECT_DIR$/lib/python3.5/collections" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/config-3.5m-x86_64-linux-gnu" afterPath="$PROJECT_DIR$/lib/python3.5/config-3.5m-x86_64-linux-gnu" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/copy.py" afterPath="$PROJECT_DIR$/lib/python3.5/copy.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/copyreg.py" afterPath="$PROJECT_DIR$/lib/python3.5/copyreg.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/encodings" afterPath="$PROJECT_DIR$/lib/python3.5/encodings" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/fnmatch.py" afterPath="$PROJECT_DIR$/lib/python3.5/fnmatch.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/functools.py" afterPath="$PROJECT_DIR$/lib/python3.5/functools.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/genericpath.py" afterPath="$PROJECT_DIR$/lib/python3.5/genericpath.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/hashlib.py" afterPath="$PROJECT_DIR$/lib/python3.5/hashlib.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/heapq.py" afterPath="$PROJECT_DIR$/lib/python3.5/heapq.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/hmac.py" afterPath="$PROJECT_DIR$/lib/python3.5/hmac.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/imp.py" afterPath="$PROJECT_DIR$/lib/python3.5/imp.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/importlib" afterPath="$PROJECT_DIR$/lib/python3.5/importlib" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/io.py" afterPath="$PROJECT_DIR$/lib/python3.5/io.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/keyword.py" afterPath="$PROJECT_DIR$/lib/python3.5/keyword.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/lib-dynload" afterPath="$PROJECT_DIR$/lib/python3.5/lib-dynload" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/linecache.py" afterPath="$PROJECT_DIR$/lib/python3.5/linecache.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/locale.py" afterPath="$PROJECT_DIR$/lib/python3.5/locale.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/ntpath.py" afterPath="$PROJECT_DIR$/lib/python3.5/ntpath.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/operator.py" afterPath="$PROJECT_DIR$/lib/python3.5/operator.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/os.py" afterPath="$PROJECT_DIR$/lib/python3.5/os.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/plat-x86_64-linux-gnu" afterPath="$PROJECT_DIR$/lib/python3.5/plat-x86_64-linux-gnu" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/posixpath.py" afterPath="$PROJECT_DIR$/lib/python3.5/posixpath.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/random.py" afterPath="$PROJECT_DIR$/lib/python3.5/random.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/re.py" afterPath="$PROJECT_DIR$/lib/python3.5/re.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/reprlib.py" afterPath="$PROJECT_DIR$/lib/python3.5/reprlib.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/rlcompleter.py" afterPath="$PROJECT_DIR$/lib/python3.5/rlcompleter.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/shutil.py" afterPath="$PROJECT_DIR$/lib/python3.5/shutil.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pip-9.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pip-9.0.1.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/setuptools-38.2.4.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/setuptools-38.2.4.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/site-packages/wheel-0.30.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/wheel-0.30.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/sre_compile.py" afterPath="$PROJECT_DIR$/lib/python3.5/sre_compile.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/sre_constants.py" afterPath="$PROJECT_DIR$/lib/python3.5/sre_constants.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/sre_parse.py" afterPath="$PROJECT_DIR$/lib/python3.5/sre_parse.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/stat.py" afterPath="$PROJECT_DIR$/lib/python3.5/stat.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/struct.py" afterPath="$PROJECT_DIR$/lib/python3.5/struct.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/tarfile.py" afterPath="$PROJECT_DIR$/lib/python3.5/tarfile.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/tempfile.py" afterPath="$PROJECT_DIR$/lib/python3.5/tempfile.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/token.py" afterPath="$PROJECT_DIR$/lib/python3.5/token.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/tokenize.py" afterPath="$PROJECT_DIR$/lib/python3.5/tokenize.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/types.py" afterPath="$PROJECT_DIR$/lib/python3.5/types.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/warnings.py" afterPath="$PROJECT_DIR$/lib/python3.5/warnings.py" />
-      <change beforePath="$PROJECT_DIR$/lib/python3.5/weakref.py" afterPath="$PROJECT_DIR$/lib/python3.5/weakref.py" />
+    <list default="true" id="b3327176-c383-4af7-bc44-873a1b95c387" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/lstm_seq2seq.py" afterPath="$PROJECT_DIR$/lstm_seq2seq.py" />
-      <change beforePath="$PROJECT_DIR$/pairs.txt" afterPath="$PROJECT_DIR$/pairs.txt" />
-      <change beforePath="$PROJECT_DIR$/pol.txt" afterPath="$PROJECT_DIR$/pol.txt" />
+      <change beforePath="$PROJECT_DIR$/s2s.h5" afterPath="$PROJECT_DIR$/s2s.h5" />
+      <change beforePath="$PROJECT_DIR$/seq_param.py" afterPath="$PROJECT_DIR$/seq_param.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -78,22 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="seq_to_seq.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seq_to_seq.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="seq_param.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seq_param.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -102,8 +29,8 @@
       <file leaf-file-name="seq_to_seq_interface.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seq_to_seq_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="221">
+              <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -114,8 +41,8 @@
       <file leaf-file-name="lstm_seq2seq.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lstm_seq2seq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="-323">
+              <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -136,12 +63,19 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Pablito" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/seq_to_seq_interface.py" />
+        <option value="$PROJECT_DIR$/seq_param.py" />
+        <option value="$PROJECT_DIR$/lstm_seq2seq.py" />
       </list>
     </option>
   </component>
@@ -183,8 +117,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,6 +139,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,20 +230,20 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47921225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -317,17 +252,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Pawel zaczyna grzebac BIG TIME" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pawel zaczyna grzebac BIG TIME" />
+    <MESSAGE value="Działa wczytywanie stałych z pliku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Działa wczytywanie stałych z pliku" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/n_layers_classifier_finished.py">
+    <entry file="file://$PROJECT_DIR$/seq_to_seq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -337,6 +275,52 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seq_to_seq_interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n_layers_classifier_finished.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lstm_seq2seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/n_layers_classifier_finished.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -350,18 +334,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/seq_to_seq_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+        <state relative-caret-position="221">
+          <caret line="13" column="35" lean-forward="false" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/seq_param.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lstm_seq2seq.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="-323">
+          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
