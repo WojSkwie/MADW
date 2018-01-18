@@ -54,9 +54,9 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    filename = 'model19'
+    filename = 'model20'
     batch_size = 64
-    epochs = 50
+    epochs = 500
     latent_dim = 256
     num_samples = 20000
     data_path = 'best_data_shuffle.txt'

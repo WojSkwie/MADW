@@ -51,7 +51,7 @@ def decode_sequence(input_seq):
     return decoded_sentence
 
 
-filename = 'model18'
+filename = 'model18reversed'
 
 model = load_model(filename + '_model.h5')
 plot_model(model, to_file=filename + '_model.png', show_shapes=True)
@@ -70,6 +70,7 @@ lines = open(data_path).read().split('\n')
 
 for line in lines[: min(num_samples, len(lines) - 1)]:
     input_text, target_text = line.split(' ')
+    input_text = reversed(input_text)
     target_text = '\t' + target_text + '\n'
     input_texts.append(input_text)
     target_texts.append(target_text)

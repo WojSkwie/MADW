@@ -11,11 +11,11 @@
 #     for line in new_pairs:
 #         file.write(line)
 
-import random
-
-lines = open('best_data.txt','r').read().split('\n')
-random.shuffle(lines)
-
-with open('best_data_shuffle.txt', 'w') as file:
-     for line in lines:
-         file.write(line + '\n')
+# import random
+#
+# lines = open('best_data.txt','r').read().split('\n')
+# random.shuffle(lines)
+#
+# with open('best_data_shuffle.txt', 'w') as file:
+#      for line in lines:
+#          file.write(line + '\n')
