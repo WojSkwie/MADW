@@ -54,11 +54,11 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    filename = 'model19'
+    filename = 'model20'
     batch_size = 64
-    epochs = 50
-    latent_dim = 256  # dlugosc sekwencji komorki LSTM
-    num_samples = 20000  # liczba próbek
+    epochs = 500
+    latent_dim = 256
+    num_samples = 20000
     data_path = 'best_data_shuffle.txt'
 
     input_texts = []
@@ -70,6 +70,8 @@ if __name__ == '__main__':
     #random.shuffle(lines)
     for line in lines[: min(num_samples, len(lines) - 1)]:
         input_text, target_text = line.split(' ')
+        #input_text = input_text[::-1]  #reversed
+        #target_text = target_text[::-1]  #reversed
         target_text = '\t' + target_text + '\n'
         input_texts.append(input_text)
         target_texts.append(target_text)
