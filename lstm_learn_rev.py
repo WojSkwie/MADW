@@ -50,9 +50,9 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    filename = 'model18_rev'
+    filename = 'model19_rev'
     batch_size = 64
-    epochs = 200
+    epochs = 100
     latent_dim = 256  # dlugosc sekwencji komorki LSTM
     num_samples = 20000  # liczba próbek
     data_path = 'best_data_shuffle.txt'
