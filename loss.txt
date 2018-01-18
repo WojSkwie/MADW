@@ -1,0 +1,2 @@
+ not-reversed, 100 epoqe: loss: 0.0032 - val_loss: 1.3465
+ not-reversed, 500 epoqe:
