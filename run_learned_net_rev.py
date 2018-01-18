@@ -51,7 +51,7 @@ def decode_sequence(input_seq):
     return decoded_sentence
 
 
-filename = 'model18_rev'
+filename = '100_rev'
 
 model = load_model(filename + '_model.h5')
 encoder_model = load_model(filename + '_encoder.h5')
@@ -118,10 +118,11 @@ for seq_index in range(100):
 
 while True:
     test_seq = input("Input word to rhyme: ")
+    test_seq = ''.join(reversed(test_seq))
     if test_seq == "" or test_seq == 'q':
         break
     test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
-    print("\noutput :", decode_sequence(test_np_array))
+    print("\noutput :", ''.join(reversed(decode_sequence(test_np_array))))
 
 
 
