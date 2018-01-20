@@ -56,13 +56,14 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    filename = 'modelX_17e'
-    is_reversed = False
-    checkpoint_name = filename + '_ep-{epoch:02d}vlos-{val_loss:.2f}.h5'
+    #filename = 'modelX_1e_REV'
+    filename = 'ZZZXXX'
+    is_reversed = True
+    epochs = 1
     batch_size = 64
-    epochs = 17
-    latent_dim = 256
+    latent_dim = 40  #256
     num_samples = 20000
+    checkpoint_name = filename + '_ep-{epoch:02d}vlos-{val_loss:.2f}.h5'
     checkpoint = keras.callbacks.ModelCheckpoint(checkpoint_name, monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=False, mode='auto', period=100);
     history = History()
     callbacks = [checkpoint, history]
@@ -225,11 +226,28 @@ if __name__ == '__main__':
     plt.show()
     #figure.savefig('xd.png')
 
-while True:
-        test_seq = input("Input word to rhyme: ")
-        if test_seq == "" or test_seq == 'q':
-            break
-        test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
-        print("\noutput :", decode_sequence(test_np_array))
+
+# # console input
+# while True:
+#         test_seq = input("Input word to rhyme: ")
+#         if test_seq == "" or test_seq == 'q':
+#             break
+#         test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
+#         print("\noutput :", decode_sequence(test_np_array))
 
 
+# # testing data and saving to txt file
+file = open(filename + '_test.txt', 'w')
+for seq_index in range(100):
+
+    input_seq = encoder_input_data[seq_index: seq_index + 1]
+    decoded_sentence = decode_sequence(input_seq).rstrip()  # remove white-chars
+    input_sentence = input_texts[seq_index]
+    if is_reversed:
+        input_sentence = input_sentence[::-1]
+        decoded_sentence = decoded_sentence[::-1]
+    print('-')
+    print(input_sentence)
+    print(decoded_sentence)
+    file.write(input_sentence + ";" + decoded_sentence + "\n")
+file.close()

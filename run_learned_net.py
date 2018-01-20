@@ -51,16 +51,18 @@ def decode_sequence(input_seq):
     return decoded_sentence
 
 
-filename = 'modelX_450e'
-is_reversed = False
+# MAIN
+
+filename = 'ZZZ1'
+is_reversed = True
 
 model = load_model(filename + '_model.h5')
-plot_model(model, to_file=filename + '_model.png', show_shapes=True)
+# plot_model(model, to_file=filename + '_model.png', show_shapes=True)
 
 encoder_model = load_model(filename + '_encoder.h5')
-#plot_model(encoder_model, to_file=filename + '_encoder.png', show_shapes=True)
+# plot_model(encoder_model, to_file=filename + '_encoder.png', show_shapes=True)
 decoder_model = load_model(filename + '_decoder.h5')
-#plot_model(decoder_model, to_file=filename + '_decoder.png', show_shapes=True)
+# plot_model(decoder_model, to_file=filename + '_decoder.png', show_shapes=True)
 
 num_samples = 100
 data_path = 'test_data_shuffle.txt'
