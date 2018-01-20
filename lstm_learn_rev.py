@@ -50,7 +50,7 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    filename = 'model19_rev'
+    filename = 'model18reversed'
     batch_size = 64
     epochs = 100
     latent_dim = 256  # dlugosc sekwencji komorki LSTM

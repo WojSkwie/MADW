@@ -1,11 +1,13 @@
 from __future__ import print_function
 
+import keras
 from keras.models import Model
 from keras.layers import Input, LSTM, Dense
 from seq_param import max_seq_length, input_token_index, target_token_index
+from keras.callbacks import History
 import random
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 def generate_sequence(input_word, seq_length, dict_length):
     encoder_word = np.zeros((1, seq_length, dict_length), dtype='float32')
@@ -54,11 +56,17 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    filename = 'model20'
+    filename = 'modelX_17e'
+    is_reversed = False
+    checkpoint_name = filename + '_ep-{epoch:02d}vlos-{val_loss:.2f}.h5'
     batch_size = 64
-    epochs = 500
+    epochs = 17
     latent_dim = 256
     num_samples = 20000
+    checkpoint = keras.callbacks.ModelCheckpoint(checkpoint_name, monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=False, mode='auto', period=100);
+    history = History()
+    callbacks = [checkpoint, history]
+    #callbacks = [history]
     data_path = 'best_data_shuffle.txt'
 
     input_texts = []
@@ -70,8 +78,9 @@ if __name__ == '__main__':
     #random.shuffle(lines)
     for line in lines[: min(num_samples, len(lines) - 1)]:
         input_text, target_text = line.split(' ')
-        #input_text = input_text[::-1]  #reversed
-        #target_text = target_text[::-1]  #reversed
+        if is_reversed:
+            input_text = input_text[::-1]  #reversed
+            target_text = target_text[::-1]  #reversed
         target_text = '\t' + target_text + '\n'
         input_texts.append(input_text)
         target_texts.append(target_text)
@@ -145,7 +154,8 @@ if __name__ == '__main__':
     model.fit([encoder_input_data, decoder_input_data], decoder_target_data,
               batch_size=batch_size,
               epochs=epochs,
-              validation_split=0.2)
+              validation_split=0.2,
+              callbacks=callbacks)
     model.save(filename + '_model.h5')
 
     # Next: inference mode (sampling).
@@ -192,9 +202,32 @@ if __name__ == '__main__':
         print('Input sentence:', input_texts[seq_index])
         print('Decoded sentence:', decoded_sentence)
 
-    while True:
+    print(history.history['val_loss'])
+    file = open(filename + '_val_loss.txt', 'w')
+    for i in history.history['val_loss']:
+        file.write("%s\n" % i)
+    file.close()
+
+    file = open(filename + '_loss.txt', 'w')
+    for i in history.history['loss']:
+        file.write("%s\n" % i)
+    file.close()
+
+    figure = plt.figure(1)
+
+    #plt.subplot(212)
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title('model loss')
+    plt.ylabel('loss')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'validation'], loc='upper left')
+    plt.show()
+    #figure.savefig('xd.png')
+
+while True:
         test_seq = input("Input word to rhyme: ")
-        if test_seq == "":
+        if test_seq == "" or test_seq == 'q':
             break
         test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
         print("\noutput :", decode_sequence(test_np_array))

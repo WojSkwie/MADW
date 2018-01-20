@@ -51,7 +51,8 @@ def decode_sequence(input_seq):
     return decoded_sentence
 
 
-filename = 'model18reversed'
+filename = 'modelX_450e'
+is_reversed = False
 
 model = load_model(filename + '_model.h5')
 plot_model(model, to_file=filename + '_model.png', show_shapes=True)
@@ -70,7 +71,9 @@ lines = open(data_path).read().split('\n')
 
 for line in lines[: min(num_samples, len(lines) - 1)]:
     input_text, target_text = line.split(' ')
-    input_text = reversed(input_text)
+    if is_reversed:
+        input_text = input_text[::-1]    # reversed
+        target_text = target_text[::-1]  # reversed
     target_text = '\t' + target_text + '\n'
     input_texts.append(input_text)
     target_texts.append(target_text)
@@ -108,23 +111,34 @@ reverse_target_char_index = dict(
     (i, char) for char, i in target_token_index.items())
 
 
-
-
+file = open(filename + '_test.txt', 'w')
 for seq_index in range(100):
-    # Take one sequence (part of the training test)
-    # for trying out decoding.
+
     input_seq = encoder_input_data[seq_index: seq_index + 1]
-    decoded_sentence = decode_sequence(input_seq)
+    decoded_sentence = decode_sequence(input_seq).rstrip()  # remove white-chars
+    input_sentence = input_texts[seq_index]
+    if is_reversed:
+        input_sentence = input_sentence[::-1]
+        decoded_sentence = decoded_sentence[::-1]
     print('-')
-    print('Input sentence:', input_texts[seq_index])
-    print('Decoded sentence:', decoded_sentence)
+    print(input_sentence)
+    print(decoded_sentence)
+    file.write(input_sentence + ";" + decoded_sentence + "\n")
+file.close()
+
 
 while True:
     test_seq = input("Input word to rhyme: ")
     if test_seq == "" or test_seq == 'q':
         break
+    if is_reversed:
+        test_seq = test_seq[::-1]
     test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
-    print("\noutput :", decode_sequence(test_np_array))
+    output_text = decode_sequence(test_np_array)
+    if is_reversed:
+        output_text = output_text[::-1]
+    print("\noutput :", output_text)
+
 
 
 
