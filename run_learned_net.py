@@ -53,8 +53,8 @@ def decode_sequence(input_seq):
 
 # MAIN
 
-filename = 'ZZZ1'
-is_reversed = True
+filename = 'modelX_200e'
+is_reversed = False
 
 model = load_model(filename + '_model.h5')
 # plot_model(model, to_file=filename + '_model.png', show_shapes=True)

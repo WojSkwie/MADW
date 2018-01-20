@@ -60,8 +60,9 @@ if __name__ == '__main__':
     filename = 'ZZZXXX'
     is_reversed = True
     epochs = 1
+
     batch_size = 64
-    latent_dim = 40  #256
+    latent_dim = 256
     num_samples = 20000
     checkpoint_name = filename + '_ep-{epoch:02d}vlos-{val_loss:.2f}.h5'
     checkpoint = keras.callbacks.ModelCheckpoint(checkpoint_name, monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=False, mode='auto', period=100);

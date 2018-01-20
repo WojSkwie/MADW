@@ -57,26 +57,26 @@ def decode_sequence(input_seq):
 
 if __name__ == '__main__':
 
-    for iteration in range(0, 5):
+    for iteration in range(0, 4):
         if iteration == 0:
-            filename = 'ZZZ1'
+            filename = 'modelX_100e'
             is_reversed = False
-            epochs = 1
+            epochs = 100
         if iteration == 1:
-            filename = 'ZZZ2'
+            filename = 'modelX_100e_REV'
             is_reversed = True
-            epochs = 1
+            epochs = 100
         if iteration == 2:
-            filename = 'ZZZ3'
+            filename = 'modelX_50e'
             is_reversed = False
-            epochs = 1
+            epochs = 50
         if iteration == 3:
-            filename = 'ZZZ4'
+            filename = 'modelX_50e_REV'
             is_reversed = True
-            epochs = 1
+            epochs = 50
 
         batch_size = 64
-        latent_dim = 40  # 256
+        latent_dim = 256
         num_samples = 20000
         checkpoint_name = filename + '_ep-{epoch:02d}vlos-{val_loss:.2f}.h5'
         checkpoint = keras.callbacks.ModelCheckpoint(checkpoint_name, monitor='val_loss', verbose=0, save_best_only=False, save_weights_only=False, mode='auto', period=100);
@@ -249,4 +249,4 @@ if __name__ == '__main__':
         #         test_np_array = generate_sequence(test_seq, max_encoder_seq_length, num_encoder_tokens)
         #         print("\noutput :", decode_sequence(test_np_array))
 
-# end of iteration
+    # end of iteration
